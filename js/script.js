@@ -22,30 +22,29 @@ function toggle() {
         document.getElementById("rule1").innerHTML = "PENSE! e adivinhe a palavra em 5 tentativas."
         document.getElementById("rule2").innerHTML ="Cada palpite deve ser uma palavra válida de 6 letras."
         document.getElementById("rule3").innerHTML = "A cor dos ladrilhos mudará para mostrar o quão perto seu palpite estava da palavra."
-        document.getElementById("exempleTitle").innerHTML = "Exemplo:"
-        document.getElementById("exempleImg1").src = "images/PT-ex1.png"
-        document.getElementById("exemple1").innerHTML ="A está na palavra e no local correto."
-        document.getElementById("exempleImg2").src = "images/PT-ex2.png"
-        document.getElementById("exemple2").innerHTML ="A está na palavra, mas no lugar errado."
-        document.getElementById("exempleImg3").src = "images/PT-ex3.png"
-        document.getElementById("exemple3").innerHTML ="U não está na palavra em nenhum lugar."
+        document.getElementById("exampleTitle").innerHTML = "Exemplo:"
+        document.getElementById("exampleImg1").src = "images/PT-ex1.png"
+        document.getElementById("example1").innerHTML ="A está na palavra e no local correto."
+        document.getElementById("exampleImg2").src = "images/PT-ex2.png"
+        document.getElementById("example2").innerHTML ="A está na palavra, mas no lugar errado."
+        document.getElementById("exampleImg3").src = "images/PT-ex3.png"
+        document.getElementById("example3").innerHTML ="U não está na palavra em nenhum lugar."
 
     }else if(pageLanguage == true){
         logo.src = "images/EN-logo.png";
         document.getElementById("start").innerHTML = "START";
         document.getElementById("check").innerHTML = "CHECK";
-
         document.getElementById("offcanvasNavbarLabel").innerHTML = "HOW TO PLAY";
         document.getElementById("rule1").innerHTML = "THINK! and guess the word in 5 tries."
         document.getElementById("rule2").innerHTML ="Each guess must be a valid 6-letter word."
         document.getElementById("rule3").innerHTML = "The color of the tiles will change to show how close your guess was to the word."
-        document.getElementById("exempleTitle").innerHTML = "Exemple:"
-        document.getElementById("exempleImg1").src = "images/EN-ex1.png"
-        document.getElementById("exemple1").innerHTML ="A está na palavra e no local correto."
-        document.getElementById("exempleImg2").src = "images/EN-ex2.png"
-        document.getElementById("exemple2").innerHTML ="A está na palavra, mas no lugar errado."
-        document.getElementById("exempleImg3").src = "images/EN-ex3.png"
-        document.getElementById("exemple3").innerHTML ="U não está na palavra em nenhum lugar."
+        document.getElementById("exampleTitle").innerHTML = "Example:"
+        document.getElementById("exampleImg1").src = "images/EN-ex1.png"
+        document.getElementById("example1").innerHTML ="M is in the word and in the correct spot."
+        document.getElementById("exampleImg2").src = "images/EN-ex2.png"
+        document.getElementById("example2").innerHTML ="M is in the word but in the wrong spot."
+        document.getElementById("exampleImg3").src = "images/EN-ex3.png"
+        document.getElementById("example3").innerHTML ="N is not in the word in any spot."
     }
 }
 
