@@ -1,3 +1,266 @@
-H1{
-    display: inline-block;
+body{
+    font-family: 'Roboto', sans-serif;
 }
+
+input{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.word1chars, .word2chars, .word3chars, .word4chars, .word5chars{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px rgba(0, 0, 0, 0) solid;
+    display:inline-table;
+    background-color: rgb(217, 217, 217);
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+p::after{
+    transition: ease-in 10ms;
+}
+
+.inputField{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.word1, .word2, .word3, .word4, .word5{
+    text-align: center;
+}
+
+
+.wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height 1s ease;
+    margin: auto;
+  }
+
+  .restart{
+    margin: auto;
+  }
+
+  .menu{
+    text-align: center;
+  }
+
+  .logo{
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+
+  .language{
+    text-align: center;
+  }
+
+  .flag{
+    display: inline;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #start, #check, #restart, .close{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #dba400;
+    border-radius: 8px;
+    width: auto;
+    height: 40px;
+    background-color: WHITE;
+    color: #dba400;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    box-shadow: 2px 2px 1px #dba400 ;
+  }
+
+  #restart, .closeFail{
+    border-color: #cc3300;
+    color: #cc3300;
+    box-shadow: 2px 2px 1px #cc3300 ;
+  }
+
+  #start, .close{
+    border-color: #118711;
+    color: #118711;
+    box-shadow: 2px 2px 1px #118711 ;
+  }
+
+
+
+
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25.5px;
+    top: 15px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cc3300;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 19.5px;
+    width: 19.5px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #33cc33;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #00000000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(19.5px);
+    -ms-transform: translateX(19.5px);
+    transform: translateX(19.5px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 25.5px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+  .popup {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    z-index: 9999;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.612);
+    z-index: 9998;
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .finalImg{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+
+  .finalMessage{
+    margin-top: 20px;
+  }
+
+  .finalMessageWord{
+    color: #118711;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+  .logo-dev{
+    width: 50px;
+  }
+
+  .exempleImg{
+    width: 80%;
+  }
+
+
+
+
+
+  .shake-animation {
+    animation: shake 0.5s;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+
+  
+  @media screen and (max-width: 600px){
+    .popup{
+        width: 400px;
+        height: 500px;
+    }
+
+    .logo{
+        width: 300px;
+    }
+
+  }
